@@ -1,16 +1,19 @@
 {
-	"name": "シンジー Extension!",
+	"name": "シンジー",
 	"version": "1.0.0",
 	"manifest_version": 2,
-	"description": "ファンの皆様にお送りする、私のChrome拡張機能（非公式）です",
+	"description": "使ったらすぐ無効にしてね",
 	"icons": {
 		"16": "img/icon16.png",
 		"48": "img/icon48.png",
 		"128": "img/icon128.png"
 	},
 	"browser_action": {
-		"default_title": "シンジー Extension!",
-		"default_icon": "img/icon19.png",
+		"default_title": "シンジー",
+		"default_icon": {
+			"19": "img/icon19.png",
+			"38": "img/icon38.png"
+		},
 		"default_popup": "popup.html"
 	},
 	"content_scripts": [
