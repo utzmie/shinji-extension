@@ -1,0 +1,7 @@
+*.BAK
+*.LCK
+.DS_Store
+Icon
+._*
+Thumbs.db
+Desktop.ini

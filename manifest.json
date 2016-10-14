@@ -1,0 +1,42 @@
+{
+	"name": "シンジー Extension!",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "ファンの皆様にお送りする、私のChrome拡張機能（非公式）です",
+	"icons": {
+		"16": "img/icon16.png",
+		"48": "img/icon48.png",
+		"128": "img/icon128.png"
+	},
+	"browser_action": {
+		"default_title": "シンジー Extension!",
+		"default_icon": "img/icon19.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"http://www.nicovideo.jp/*",
+				"https://www.nicovideo.jp/*",
+				"http://live.nicovideo.jp/*",
+				"https://live.nicovideo.jp/*"
+			],
+			"css": ["css/style.css"],
+			"js": [
+				"js/jquery-2.2.4.min.js",
+				"js/content.js"
+			],
+			"run_at": "document_idle"
+		}
+	],
+	"web_accessible_resources": [
+		"img/*"
+	],
+	"permissions": [
+		"tabs",
+		"http://*/*",
+		"https://*/*",
+		"storage",
+		"unlimitedStorage"
+	]
+}

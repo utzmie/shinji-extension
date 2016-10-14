@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>シンジー Extension</title>
+	<style>
+		body {
+			position: relative;
+			margin: 0;
+			padding: 0;
+			min-width: 20em;
+			font-size: 14px;
+			color: #333333;
+			background-image: url("./img/shinji.png");
+			background-repeat: no-repeat;
+			background-position: 50% 0;
+			background-size: auto 200px;
+			padding-top: 200px;
+		}
+
+		h1 {
+			margin: 0;
+			outline: 0;
+			position: absolute;
+			top: 20px;
+			right: 30px;
+		}
+
+		main {
+			padding: 8px;
+		}
+
+		label {
+			display: inline-block;
+			padding: .5em 0;
+			cursor: pointer;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			margin: 0.5em 0;
+			padding: 0;
+		}
+
+		a {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: .75em 1em;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			background-color: #fff;
+			color: #333;
+			text-decoration: none;
+			transition: all .25s ease-out;
+			outline: 0;
+		}
+		a:hover,
+		a:focus {
+			color: #fff;
+			background-color: #666;
+			border-color: #666;
+		}
+		a::after {
+			content: '';
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			border-top: 3px solid #ccc;
+			border-right: 3px solid #ccc;
+			transform: rotate(45deg);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 tabindex="0"><img src="./img/h1.svg" alt="シンジー" width="30" height="145"></h1>
+	</header>
+	<main>
+		<form id="form">		
+			<label>
+				<input type="checkbox" id="shinji_mode" name="shinji_mode"> シンジー動画モード ON / OFF
+			</label>
+		</form>
+		<div id="video">
+			<ul id="video-list"></ul>
+		</div>
+		<p style="text-align: center; font-size: 12px;">リンクをクリックで動画ページに飛べるぞ！</p>
+	</main>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>
