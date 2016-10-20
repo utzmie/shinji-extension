@@ -176,7 +176,7 @@
 
 
 /* カテゴリー内の各放送のサムネイル */
-ul.user-programs > li a::before {
+.is-shinji-mode ul.user-programs > li a::before {
 	content: '';
 	display: block;
 	width: 64px;
@@ -188,9 +188,6 @@ ul.user-programs > li a::before {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
-ul.user-programs > li img {
+.is-shinji-mode ul.user-programs > li img {
 	/* display: none; */
-
-}
-	
 }
